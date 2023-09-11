@@ -1,0 +1,95 @@
+/* calculator.css */
+
+.calculator-container {
+    padding: 20px 0;
+    max-width: 500px;
+    margin-left: -20px;
+    margin-right: 10px;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .input-container label {
+    width: 70%; /* You can adjust this width based on your preference */
+    text-align: left;
+  }
+  
+  .input-container input {
+    width: 20%;  
+  }
+  
+  .button-container {
+    margin-bottom: 20px;
+  }
+  
+  .results-table {
+    border: 2px solid black;
+    width: 100%;
+    text-align: right;
+    border-collapse: collapse;
+  }
+  
+  .results-table th, .results-table td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .results-table th {
+    text-align: center;
+  }
+  
+  .results-table tr:first-child td {
+    border-top: none;
+  }
+  .button-container button {
+    background-color: #4FBF74;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px; /* Adjust as per your liking */
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .button-container button:hover {
+    background-color: darkgreen; /* Change color on hover */
+  }
+  
+  /* Responsiveness for mobile devices */
+  @media (max-width: 768px) {
+    .results-table {
+        margin: 10px auto; /* Adjust the margin value as per your liking */
+        font-size: 12px;/* Set to a smaller font size for mobile views */
+        width: 100%;
+    }
+
+    .input-container input {
+        width: 25%; /* Adjust the width as you like */
+        margin: 0 auto; /* Center the input */
+        display: block; /* Make it a block-level element to apply the margin */
+    }
+
+    .input-container label {
+      width: 100%;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    
+    .input-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .results-table th, .results-table td {
+      padding: 5px; /* Reduce padding for smaller screens */
+    }
+  }
+
+  .testing {
+    color:aquamarine;
+  }
+  
